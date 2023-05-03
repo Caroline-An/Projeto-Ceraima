@@ -1,8 +1,10 @@
-# Para a Equipe (excluir depois)
+# Para a Equipe
+- Instale o Láravel e php na sua máquina;
 - Entre no vs code;
-- dê um "git clone https://github.com/Caroline-An/Sistema-de-Cadastro-de-Patrimonio.git" no terminal;
-- Certifique-se de entrar na sua branch específica;
-- Coemece a programar.
+- Dê um "git clone https://github.com/Caroline-An/Sistema-de-Cadastro-de-Patrimonio.git" no terminal;
+- Certifique-se SEMPRE de entrar na sua branch específica;
+- Comece a programar.
+- php artisan serve -> faz startar a aplicaç
 
 ---
 # Sistema-de-Cadastro-de-Patrimônio
