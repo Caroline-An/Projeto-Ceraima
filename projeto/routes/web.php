@@ -13,12 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Essa rota é a inicial, toda vez que startar o servidor ela vai ser chamada primeiro
+    vamos utilizar só para controle, a princípio os links para as demais páginas serão
+    postos nelas p q a gente possa acessar com facilidade, no futuro vamos trocar para 
+    que ela sempre leve diretamente à tela de login*/
+Route::get('/', function () { return view('welcome');});
 
-    return view('welcome');
-});
+Route::get('/login', function () { return view('login');});
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/cadastro', function () { return view('cadastro');});
 
+Route::get('/alterarPatrimonio', function () { return view('alterarPatrimonio1');});
+
+Route::get('/cadastrarItem', function () { return view('cadastroDeItens1');});
+
+Route::get('/categorias', function () { return view('telaCategorias1');});
+
+Route::get('/excluir', function () { return view('excluirIten1');});
+
+Route::get('/home', function () { return view('home');});
+
+Route::get('/patrimonios', function () { return view('telaPatrimonios1');});
+
+Route::get('/reservas', function () { return view('reservasPatrimonios1');});
+
+Route::get('/reservados', function () { return view('reservas1');});
