@@ -13,7 +13,7 @@
     <div class="row align-items-center">
         <div class="col-md-10 mx-auto col-lg-5">
 
-            <form class="p-4 p-md-5 cardLoginCadastro bg-light" action="" method="post">
+            <form class="p-4 p-md-5 cardLoginCadastro bg-light" action="" method="">
 
                 <div class="row">
                     <div class="d-flex justify-content-center">
@@ -49,7 +49,7 @@
 
                 <div class="row">
                     <div class="d-flex justify-content-center m-0">
-                        <a class=" btn btn-lg botoes" href="home">ENTRAR</a>
+                        <button class=" btn btn-lg botoes" href="home">ENTRAR</button>
                     </div>
                     
                     <p class="d-flex justify-content-center m-0 textoAzul3">ou</p>
