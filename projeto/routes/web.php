@@ -35,6 +35,8 @@ Route::get('/home', function () { return view('home');});
 
 Route::get('/patrimonios', function () { return view('telaPatrimonios1');});
 
-Route::get('/reservas', function () { return view('reservasPatrimonios1');});
+Route::get('/perfil', function () { return view('perfil');});
+
+Route::get('/reservar', function () { return view('reservasPatrimonios1');});
 
 Route::get('/reservados', function () { return view('reservas1');});

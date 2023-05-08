@@ -3,7 +3,8 @@
 @section('title', 'Login')
 
 @section('cabecalho')
-<!--Na tela de login e de cadastro o cabeçalho deve ter só o nome do sistema-->
+<!--Na tela de login e de cadastro o cabeçalho deve ter só o nome do sistema q é definido no layout main-->
+
 @endsection('cabecalho')
 
 @section('content')
@@ -13,11 +14,11 @@
     <div class="row align-items-center">
         <div class="col-md-10 mx-auto col-lg-5">
 
-            <form class="p-4 p-md-5 cardLoginCadastro bg-light" action="" method="post">
+            <form class="p-4 p-md-5 cardLoginCadastro bg-light" action="" method="">
 
                 <div class="row">
                     <div class="d-flex justify-content-center">
-                        <p class="sinalBemVindo rounded p-2" style="font-size: 20px;">Bem vindo/a ao CadPatri</p>
+                        <p class="sinalBemVindo pt-3 pb-3 ps-5 pe-5" style="font-size: 20px;">Bem vindo/a ao CadPatri</p>
                     </div>
                     
                     <div class="d-flex justify-content-center">
@@ -41,20 +42,20 @@
                     </div>
                 </div>
                 
-                <div class="checkbox textoAzul3">
+                <div class="checkbox textoAzul3 m-3">
                     <label>
                         <input type="checkbox" value="guardarLogin"> Guardar login?
                     </label>
                 </div>
 
                 <div class="row">
-                    <div class="d-flex justify-content-center m-0">
+                    <div class="d-flex justify-content-center m-1">
                         <a class=" btn btn-lg botoes" href="home">ENTRAR</a>
                     </div>
                     
-                    <p class="d-flex justify-content-center m-0 textoAzul3">ou</p>
+                    <p class="d-flex justify-content-center m-1 textoAzul3">ou</p>
                     
-                    <div class="d-flex justify-content-center m-0">
+                    <div class="d-flex justify-content-center m-1">
                         <a class="btn btn-lg botoes" href="cadastro">CADASTRAR</a>
                     </div>
                 </div>
