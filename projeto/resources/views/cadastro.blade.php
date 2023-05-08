@@ -3,7 +3,7 @@
 @section('title', 'Cadastro')
 
 @section('cabecalho')
-<!--Na tela de login e de cadastro o cabeçalho deve ter só o nome do sistema-->
+<!--Na tela de login e de cadastro o cabeçalho deve ter só o nome do sistema q é definido no layout main-->
 @endsection('cabecalho')
 
 @section('content')
@@ -52,7 +52,7 @@
                 <div class="row">
 
                     <div class="d-flex justify-content-center m-3">
-                        <a class="btn btn-lg botoes" href="cadastro">CADASTRAR</a>
+                        <a class="btn btn-lg botoes" href="home">CADASTRAR</a>
                     </div>
 
                 </div>
