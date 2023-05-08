@@ -17,7 +17,7 @@
 
                 <div class="row">
                     <div class="d-flex justify-content-center">
-                        <p class="sinalBemVindo rounded p-2" style="font-size: 20px;">Bem vindo/a ao CadPatri</p>
+                        <p class="sinalBemVindo pt-3 pb-3 ps-5 pe-5" style="font-size: 20px;">Bem vindo/a ao CadPatri</p>
                     </div>
                     
                     <div class="d-flex justify-content-center">
@@ -41,20 +41,20 @@
                     </div>
                 </div>
                 
-                <div class="checkbox textoAzul3">
+                <div class="checkbox textoAzul3 m-3">
                     <label>
                         <input type="checkbox" value="guardarLogin"> Guardar login?
                     </label>
                 </div>
 
                 <div class="row">
-                    <div class="d-flex justify-content-center m-0">
+                    <div class="d-flex justify-content-center m-1">
                         <button class=" btn btn-lg botoes" href="home">ENTRAR</button>
                     </div>
                     
-                    <p class="d-flex justify-content-center m-0 textoAzul3">ou</p>
+                    <p class="d-flex justify-content-center m-1 textoAzul3">ou</p>
                     
-                    <div class="d-flex justify-content-center m-0">
+                    <div class="d-flex justify-content-center m-1">
                         <a class="btn btn-lg botoes" href="cadastro">CADASTRAR</a>
                     </div>
                 </div>

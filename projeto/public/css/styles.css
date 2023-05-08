@@ -37,6 +37,7 @@ body{
 .sinalBemVindo{
     background-color: var(--azul-claro-1);
     color: #fff;
+    border-radius: 22px;
 }
 
 .cardLoginCadastro{
