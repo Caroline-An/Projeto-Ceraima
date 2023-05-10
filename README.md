@@ -149,20 +149,27 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ---
 ## Layout das Telas
     
-Tela de Cadastro
+Tela de Cadastro - MODELO
 ![Cadastro](https://user-images.githubusercontent.com/91372093/234932800-d06fdba9-3b0d-4ef6-be55-e873015eb041.png)
   
+Tela de Cadastro - PRODUTO FINAL
+![Captura de tela de 2023-05-10 16-52-38](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/0003660b-13e6-46c9-afef-02687b91998a)
+
 ---
 Tela de Login - MODELO
 ![Login-MODELO](https://user-images.githubusercontent.com/91372093/234933116-ee39810a-78bd-40d1-b2a0-b3525948b006.png)
 
-Tela de Login - PRODUTO 
+Tela de Login - PRODUTO FINAL
 ![Login-PRODUTO-FINAL](https://user-images.githubusercontent.com/91372093/236560770-c789690d-ad5b-440a-891c-d52bbd9f156c.png)
 INAL
 
 ---
-Home Page
+Home Page - MODELO
 ![Home page](https://user-images.githubusercontent.com/91372093/234933176-9aa0dd8e-fcb6-490f-954d-efe0b16f4f12.png)
+  
+Home Page - PRODUTO FINAL
+![Captura de tela de 2023-05-10 16-52-52](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/357358a9-7e14-46f6-bdf3-c2bde2f0c7d0)
+
 ---
 Tela de Cadastro de Patrimônio - 1
 ![Tela de cadastro de itens](https://user-images.githubusercontent.com/91372093/234933441-64ebba6a-292e-405d-8411-951fbcda7776.png)
