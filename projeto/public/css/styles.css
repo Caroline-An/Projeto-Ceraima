@@ -130,6 +130,7 @@ html, body{
 .itens-home-page{
     color: var(--texto-3);
     text-decoration: none;
+    font-size: 25px;
 }
 
 .container-pequeno{
