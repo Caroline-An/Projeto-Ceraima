@@ -155,6 +155,7 @@ Tela de Cadastro - MODELO
 Tela de Cadastro - PRODUTO FINAL
 ![Captura de tela de 2023-05-10 16-52-38](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/0003660b-13e6-46c9-afef-02687b91998a)
 
+  
 ---
 Tela de Login - MODELO
 ![Login-MODELO](https://user-images.githubusercontent.com/91372093/234933116-ee39810a-78bd-40d1-b2a0-b3525948b006.png)
@@ -170,42 +171,70 @@ Home Page - MODELO
 Home Page - PRODUTO FINAL
 ![Captura de tela de 2023-05-10 16-52-52](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/357358a9-7e14-46f6-bdf3-c2bde2f0c7d0)
 
+![Captura de tela de 2023-05-10 16-54-33](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/d2d7c43f-8c1f-46ee-b017-59be4140b3be)
+
+  
 ---
 Tela de Cadastro de Patrimônio - 1
 ![Tela de cadastro de itens](https://user-images.githubusercontent.com/91372093/234933441-64ebba6a-292e-405d-8411-951fbcda7776.png)
+  
+  
 ---
-Tela de Cadastro de Patrimônio - 2![Tela de cadastro de itens - 2](https://user-images.githubusercontent.com/91372093/234933517-2ead4c55-8ee6-4071-bb7b-dd3e3b8588a4.png)
+Tela de Cadastro de Patrimônio - 2
+![Tela de cadastro de itens - 2](https://user-images.githubusercontent.com/91372093/234933517-2ead4c55-8ee6-4071-bb7b-dd3e3b8588a4.png)
+  
+  
 ---
 Tela de Categorias - 1
 ![Tela de categorias - 1](https://user-images.githubusercontent.com/91372093/234933658-f31c4817-e41e-434e-ad8e-f5eac4b101a0.png)
+  
+  
 ---
 Tela de Cadastro de Patrimônio - 2
 ![Tela de categorias - 2](https://user-images.githubusercontent.com/91372093/234933747-916da107-d088-498c-b10a-5973e81b2cc8.png)
+  
+  
 ---
 Tela de Patrimônios - 1
 ![Tela de Patrimônios - 1](https://user-images.githubusercontent.com/91372093/234933848-eae7b9a3-f692-43ec-bb6d-ff0f71cd8f13.png)
+  
 Tela de Patrimônios - 2
 ![Tela de Patrimônios - 2](https://user-images.githubusercontent.com/91372093/234933888-6c92d111-2aec-40c9-9291-c61c1ae916f2.png)
+  
+  
 ---
 Tela de Alteração dos Patrimônios - 1
 ![Tela de alteração de patrimônio](https://user-images.githubusercontent.com/91372093/234933989-13753b0d-00b0-4589-8a7c-ed7beff0ee86.png)
+  
 Tela de Alteração dos Patrimônios - 2
 ![Tela de alteração de patrimônios- 2](https://user-images.githubusercontent.com/91372093/234934077-958ebcad-6e8c-49ab-866a-b4f610052961.png)
+  
+  
 ---
 Tela de Exclusão dos Patrimônios - 1
 ![Tela exclusão de Patrimônios](https://user-images.githubusercontent.com/91372093/234934312-544fdd7a-1106-44fe-a9e4-52933adc53b3.png)
+  
+  
 ---
 Tela de Reserva de Patrimônios - 1
 ![Tela reserva de Patrimônios - 1](https://user-images.githubusercontent.com/91372093/234941281-9b3a3402-4c33-4dbf-b9f6-6db9a90af16d.png)
+  
 Tela de Reserva de Patrimônios – 2
 ![Tela reserva de Patrimônios - 2](https://user-images.githubusercontent.com/91372093/236561323-264f4e34-5f6d-4cfc-a12e-4ae1179fb7c3.png)
+  
 Tela de Reserva de Patrimônios – 3
 ![Tela reserva de Patrimônios - 3](https://user-images.githubusercontent.com/91372093/236561452-94b394cb-9318-4ad7-8171-67d8ed3bd0b2.png)
+  
+  
 ---
 Tela de Reserva – 1
 ![Tela de Reservas- 1](https://user-images.githubusercontent.com/91372093/236561690-6b042b68-332d-4702-ac08-96e987b01990.png)
+  
 Tela de Reserva – 2
 ![Tela de Reservas- 2](https://user-images.githubusercontent.com/91372093/236561887-b4089c9e-5f19-4b1a-84b6-04ac7cc1f1f0.png)
+  
 Tela de Reserva – 3
 ![Tela de Reservas- 3](https://user-images.githubusercontent.com/91372093/236561855-5704bb46-c3cf-45a2-8b6f-f69f01534b8c.png)
+  
+  
 ---
