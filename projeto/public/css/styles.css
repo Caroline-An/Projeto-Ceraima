@@ -81,7 +81,7 @@ html, body{
 
 
 
-    /*Home page*/
+    /*Home page - meu lateral*/
 .modal{
     width: 300px;
     color: #fff;
@@ -117,6 +117,33 @@ html, body{
     background-color: var(--azul-botoes);
 }
 
+
+/*Home page - conteúdo*/
+
+.container-conteudo{
+    border-top-color: var(--texto-2);
+    border-radius: 22px;
+    border-top-width: medium;
+    border-top-style: solid;
+}
+
+.itens-home-page{
+    color: var(--texto-3);
+    text-decoration: none;
+}
+
 .container-pequeno{
     background-color: var(--container-pequeno);
+    border-radius: 22px;
+    font-size: 20px;
+    color: var(--texto-3);
+    font-weight: bold;
+}
+
+.imagens{
+    max-width: 65%;
+    max-height: 65%;
+    padding: 0%;
+    margin: 3px;
+    border-radius:22px
 }
