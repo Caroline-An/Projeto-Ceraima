@@ -10,7 +10,6 @@ html, body{
     --azul-cabecalho: #6FBCAA;
     --azul-botoes: #40A7A0;
     --azul-botoes-2: #32837d;
-    --texto-1: #6FBCAA;
     --texto-2: #A7A7A7;
     --texto-3: #259B9B;
     --container-pequeno: #D9D9D9;
@@ -150,8 +149,14 @@ html, body{
 }
 
 
-/*Home page - cadastrar bens*/
+/*Cadastrar bens*/
 .sinalizador{
+    background-color: var(--azul-cabecalho);
+    color: #fff;
+    font-size: 20px;
+}
+
+.sinalizador-selecionado{
     background-color: var(--texto-3);
     color: #fff;
     font-size: 20px;
@@ -171,4 +176,27 @@ input{
 
 select{
     color: var(--texto-2);
+}
+
+/*Exclusão de patrimônio*/
+
+table{
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.cabecalho-itens{
+    background-color: var(--texto-3);
+    color: #fff;
+    height: 50px;
+}
+
+.conteudo-itens{
+    background-color: var(--azul-cabecalho);
+}
+
+.botao-personalizado-itens{
+    background-color: var(--azul-cabecalho);
+    border: none;
+    color: #fff;
 }
