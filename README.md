@@ -175,14 +175,20 @@ Home Page - PRODUTO FINAL
 
   
 ---
-Tela de Cadastro de Patrimônio - 1
+Tela de Cadastro de Patrimônio - 1 - MODELO
 ![Tela de cadastro de itens](https://user-images.githubusercontent.com/91372093/234933441-64ebba6a-292e-405d-8411-951fbcda7776.png)
   
+Tela de Cadastro de Patrimônio - 1 - PRODUTO FINAL
+![Captura de tela de 2023-05-11 16-45-33](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/4363b833-c209-4684-8abf-9d57e4fd87d2)
+
   
 ---
-Tela de Cadastro de Patrimônio - 2
+Tela de Cadastro de Patrimônio - 2 - MODELO
 ![Tela de cadastro de itens - 2](https://user-images.githubusercontent.com/91372093/234933517-2ead4c55-8ee6-4071-bb7b-dd3e3b8588a4.png)
-  
+
+Tela de Cadastro de Patrimônio - 2 - PRODUTO FINAL
+![Captura de tela de 2023-05-11 16-47-26](https://github.com/Caroline-An/Projeto-Ceraima/assets/91372093/5f8ccec2-e38d-499f-bfe7-8af77cadd81b)
+
   
 ---
 Tela de Categorias - 1
