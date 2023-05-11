@@ -142,7 +142,7 @@
                     <form action="" method="" class="col-12 m-0 p-0 formulario">
                         <div class="row m-2">
                             <div class="col m-4">
-                                <label for="inputNomeBEm" class="m-2 textoAzul3">Nome:</label>
+                                <label for="inputNomeBem" class="m-2 textoAzul3">Nome:</label>
                                 <input type="text" class="w-auto form-control" id="inputNomeBem" placeholder="Mesa, cadeira, pincel, etc">
 
                             </div>
