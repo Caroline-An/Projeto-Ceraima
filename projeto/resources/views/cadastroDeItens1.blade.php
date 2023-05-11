@@ -45,9 +45,6 @@
         
 
     </div>
-
- 
-
 @endsection('cabecalho')
 
 @section('content')
