@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Login')
+@section('title', 'Home Page')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
