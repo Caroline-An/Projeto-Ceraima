@@ -141,44 +141,44 @@
                 
                     <form action="" method="" class="col-12 m-0 p-0 formulario">
                         <div class="row m-2">
-                            <div class="col">
-                                <label for="inputNomeBEm" class="m-2 textoAzul3">Nome:</label>
+                            <div class="col m-4">
+                                <label for="inputNomeBem" class="m-2 textoAzul3">Nome:</label>
                                 <input type="text" class="w-auto form-control" id="inputNomeBem" placeholder="Mesa, cadeira, pincel, etc">
 
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputQuantidade" class="m-2 textoAzul3">Quantidade:</label>
                                 <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputDescricao" class="m-2 textoAzul3">Descrição:</label>
                                 <input type="text" class="w-auto form-control" id="inputDescricao" placeholder="60 x 60 x 56 cm, quatro pernas...">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputValorUnitario" class="m-2 textoAzul3">Valor unitário:</label>
                                 <input type="text" class="w-auto form-control" id="inputValorUnitario" placeholder="300,00">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputNumeroBem" class="m-2 textoAzul3">Número do bem:</label>
                                 <input type="number" class="w-auto form-control" id="inputNumeroBem" placeholder="1">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputNumeroNotaFiscal" class="m-2 textoAzul3">Número da nota fiscal:</label>
                                 <input type="number" class="w-auto form-control" id="inputNumeroNotaFiscal" placeholder="12">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputDataNotaFiscal" class="m-2 textoAzul3">Data da nota fiscal:</label>
                                 <input type="date" class="w-auto form-control" id="inputDataNotaFiscal" placeholder="01/01/2023">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputDataAquisicao" class="m-2 textoAzul3">Data de aquisição:</label>
                                 <input type="date" class="w-auto form-control" id="inputDataAquisicao" placeholder="01/01/2023">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="inputSetor" class="w-2 textoAzul3">Setor:</label>
-                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escolar">
+                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escol m-4ar">
                             </div>
-                            <div class="col">
+                            <div class="col m-4">
                                 <label for="selectSituacao" class="w-2 textoAzul3">Situação:</label>
                                 <br><select name="selectSituacao" required="required" class="p-2 rounded form-control">
                                     <option value="servivel">Servível</option>
@@ -189,7 +189,9 @@
                         </div>
 
                         <div class="col-lg-12" style="text-align:right">
-                            <input type="submit" class="btn btn-success" value="Cadastrar" href="#">
+                            <a href="categorias">
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </a>
                         </div>
                     </form>
 
