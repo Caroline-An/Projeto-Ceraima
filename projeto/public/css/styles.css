@@ -200,3 +200,8 @@ table{
     border: none;
     color: #fff;
 }
+
+/*Exclusão de patrimônio - modal*/
+.modal-edit{
+    color: #fff;
+}
