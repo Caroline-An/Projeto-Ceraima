@@ -39,4 +39,6 @@ Route::get('/perfil', function () { return view('perfil');});
 
 Route::get('/reservar', function () { return view('reservarPatrimonios');});
 
+Route::get('/reservar2', function () { return view('reservarPatrimonios2');});
+
 Route::get('/reservados', function () { return view('reservas1');});

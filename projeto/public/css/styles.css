@@ -213,5 +213,12 @@ table{
 
 .modal-footer{
     border-radius: 22px;
-    border: #fff;
+    border-color: #fff;
+}
+
+
+/*IDs*/
+/*Tela - Categorias*/
+#categorias{
+    text-decoration: none;
 }

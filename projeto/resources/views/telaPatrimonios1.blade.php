@@ -129,11 +129,11 @@
 
     <!--Conteúdo-->
     <div class="container-fluid">
-        <div class="ms-5 text-start badge text-wrap sinalizador">
+        <a href="categorias" id="categorias" class="ms-5 text-start badge text-wrap sinalizador">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
             </svg> Categorias
-        </div>
+        </a>
         <div class="ms-1 text-start badge text-wrap sinalizador-selecionado">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
                 <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
@@ -247,26 +247,26 @@
 
     </div>
 
-        <!-- Modal -->
-        <div class="modal fade modalExcluir" id="excluirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog text-center">
-                <div class="modal-content">
-                    <div class="modal-header"><!--Modal-header-->
-                        <h5 class="modal-title" id="exampleModalLabel">Excluir item</h5>
+    <!-- Modal -->
+    <div class="modal fade modalExcluir" id="excluirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog text-center">
+            <div class="modal-content">
+                <div class="modal-header"><!--Modal-header-->
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir item</h5>
+                </div>
+                <div class="modal-body"><!--Modal-body-->
+                    Tem certeza que deseja excluir esse bem?
+                </div>
+                <div class="modal-footer row"><!--Modal-footer-->
+                    <div class="col d-flex justify-content-around">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
                     </div>
-                    <div class="modal-body"><!--Modal-body-->
-                        Tem certeza que deseja excluir esse item?
-                    </div>
-                    <div class="modal-footer row"><!--Modal-footer-->
-                        <div class="col d-flex justify-content-around">
-                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
-                        </div>
-                        <div class="col d-flex justify-content-around">
-                            <button type="button" class="btn btn-danger">Excluir</button>
-                        </div>
+                    <div class="col d-flex justify-content-around">
+                        <button type="button" class="btn btn-danger">Excluir</button>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
 
