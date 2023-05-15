@@ -202,6 +202,16 @@ table{
 }
 
 /*Exclusão de patrimônio - modal*/
-.modal-edit{
+
+.modalExcluir{
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: auto;
     color: #fff;
+    border-radius: 22px;
+}
+
+.modal-footer{
+    border-radius: 22px;
+    border: #fff;
 }
