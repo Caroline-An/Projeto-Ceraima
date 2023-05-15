@@ -176,7 +176,7 @@
                             </div>
                             <div class="col m-4">
                                 <label for="inputSetor" class="w-2 textoAzul3">Setor:</label>
-                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escol m-4ar">
+                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escolar">
                             </div>
                             <div class="col m-4">
                                 <label for="selectSituacao" class="w-2 textoAzul3">Situação:</label>
