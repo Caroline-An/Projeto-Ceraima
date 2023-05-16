@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Sistema\SistemaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,55 +22,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', function () { 
-    return view('login');
-});
+Route::get('/login', [SistemaController::class, 'login']);
 
-Route::get('/cadastro', function () { 
-    return view('cadastro');
-});
+Route::get('/cadastro', [SistemaController::class, 'cadastro']);
 
-Route::get('/home', function () { 
-    return view('home');
-});
+Route::get('/home', [SistemaController::class, 'home']);
 
-Route::get('/cadastrarItem', function () { 
-    return view('itens/cadastroDeItens1');
-});
+Route::get('/cadastroDeItens', [SistemaController::class, 'cadastroDeItens']);
 
-Route::get('/bens/{id?}', function () { 
-    return view('itens/telaPatrimonios1');
-});
+Route::get('/bensCadastrados', [SistemaController::class, 'bensCadastrados']);
 
-Route::get('/categorias', function () { 
-    return view('categorias/telaCategorias1');
-});
+Route::get('/alterarInfoBem', [SistemaController::class, 'alterarInfoBem']);
 
-Route::get('/alterarPatrimonio', function () { 
-    return view('itens/alterarPatrimonio1');
-});
-
-Route::get('/excluir', function () { 
-    return view('itens/excluirIten1');
-});
-
-Route::get('/reservar', function () { 
-    return view('reservas/reservarPatrimonios');
-});
-
-Route::get('/reservar2', function () { 
-    return view('reservas/reservarPatrimonios2');
-});
-
-Route::get('/reservar3', function () { 
-    return view('reservas/formularioReservar');
-});
+Route::get('/excluirBem', [SistemaController::class, 'excluirBem']);
 
 
-Route::get('/reservados', function () { 
-    return view('reservas/reservas1');
-});
+Route::get('/categorias', [SistemaController::class, 'categorias']);
 
-Route::get('/perfil', function () { 
-    return view('perfil');
-});
+
+Route::get('/reservarCateg', [SistemaController::class, 'reservarCateg']);
+
+Route::get('/reservarItem', [SistemaController::class, 'reservarItem']);
+
+Route::get('/formularioDeReserva', [SistemaController::class, 'formularioDeReserva']);
+
+Route::get('/reservados', [SistemaController::class, 'reservados']);
+
+
+Route::get('/perfil', [SistemaController::class, 'perfil']);
