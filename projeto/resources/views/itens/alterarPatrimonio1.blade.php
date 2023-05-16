@@ -1,7 +1,6 @@
-
 @extends('layouts.main')
 
-@section('title', 'Categorias')
+@section('title', 'Alterar Item')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
@@ -93,7 +92,7 @@
                             Cadastrar item
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="patrimonios">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="bens">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -129,73 +128,75 @@
 
     <!--Conteúdo-->
     <div class="container-fluid">
-        <div class="ms-5 text-start badge text-wrap sinalizador-selecionado">
-            <svg class="bi bi-journal-check" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-            </svg> Reservar Bem - Categorias
+        <div class="ms-5 text-start badge text-wrap sinalizador">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg> Alterar bem
         </div>
 
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
-            
-            <div class="row">
-                <h1>Categorias</h1>
-                <form action="" class="d-flex justify-content-around w-auto" method="post">
-                    <select name="selectCampoDeBusca" required="required" class="p-2 m-2 rounded form-control">
-                        <option value="nome">Busca por nome</option>
-                        <option value="categoria">Busca por categoria</option>
-                        <option value="quantidades">Busca por quantidade</option>
-                    </select>
-
-                    <input type="text" class="w-auto m-2 form-control" id="campoDeBusca" placeholder="Mesa, cadeira, pincel...">
-                    <input type="submit" class="btn btn-success m-2" value="Buscar">
-                </form>
-            </div>
+            <div class="row d-flex justify-content-around ">
+                <div class="w-auto d-flex justify-content-center">
                 
-                <table class="table cabecalho-itens text-center p-2" id="conteudo-itens-lado-direito">
-                    <thead >
-                        <tr>
-                            <th scope="col">Categoria:</th>
-                            <th scope="col">Quantidade de itens cadastrados:</th>
-                            <th scope="col">Ação</th>
-                        </tr>
-                    </thead>
+                    <form action="" method="" class="col-12 m-0 p-0 formulario">
+                        <div class="row m-2">
+                            <div class="col m-4">
+                                <label for="inputNomeBem" class="m-2 textoAzul3">Nome:</label>
+                                <input type="text" class="w-auto form-control" id="inputNomeBem" placeholder="Mesa, cadeira, pincel, etc">
 
-                    <tbody class="conteudo-itens"> <!--class="row conteudo-itens w-auto h-auto p-2" id="conteudo-itens-lado-direito">-->
-                        <tr>
-                            <td scope="col">Uso em sala de aula</td>
-                            <td scope="col">1500</td>
-                            <td scope="col">
-                                <div class="row text-center">
-                                    <div class="col">
-                                        <a href="" class="primary">Ver bens cadastrados</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">Secretaria</td>
-                            <td scope="col">2000</td>
-                            <td scope="col">
-                                <div class="row text-center">
-                                    <div class="col">
-                                        <a href="#" class="primary">Ver bens cadastrados</a>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputQuantidade" class="m-2 textoAzul3">Quantidade:</label>
+                                <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputDescricao" class="m-2 textoAzul3">Descrição:</label>
+                                <input type="text" class="w-auto form-control" id="inputDescricao" placeholder="60 x 60 x 56 cm, quatro pernas...">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputValorUnitario" class="m-2 textoAzul3">Valor unitário:</label>
+                                <input type="text" class="w-auto form-control" id="inputValorUnitario" placeholder="300,00">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputNumeroBem" class="m-2 textoAzul3">Número do bem:</label>
+                                <input type="number" class="w-auto form-control" id="inputNumeroBem" placeholder="1">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputNumeroNotaFiscal" class="m-2 textoAzul3">Número da nota fiscal:</label>
+                                <input type="number" class="w-auto form-control" id="inputNumeroNotaFiscal" placeholder="12">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputDataNotaFiscal" class="m-2 textoAzul3">Data da nota fiscal:</label>
+                                <input type="date" class="w-auto form-control" id="inputDataNotaFiscal" placeholder="01/01/2023">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputDataAquisicao" class="m-2 textoAzul3">Data de aquisição:</label>
+                                <input type="date" class="w-auto form-control" id="inputDataAquisicao" placeholder="01/01/2023">
+                            </div>
+                            <div class="col m-4">
+                                <label for="inputSetor" class="w-2 textoAzul3">Setor:</label>
+                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escol m-4ar">
+                            </div>
+                            <div class="col m-4">
+                                <label for="selectSituacao" class="w-2 textoAzul3">Situação:</label>
+                                <br><select name="selectSituacao" required="required" class="p-2 rounded form-control">
+                                    <option value="servivel">Servível</option>
+                                    <option value="inservivel">Inservível</option>
+                                    <option value="reservado">Reservado</option>
+                                </select>
+                            </div>
+                        </div>
 
-                <div  class=" me-3" style="text-align:right">
-                    <a href="cadastrarItem" class="btn btn-success">Nova</a>
+                        <div class="col-lg-12" style="text-align:right">
+                            <input type="submit" class="btn btn-success" value="Cadastrar" href="#">
+                        </div>
+                    </form>
+
                 </div>
-
             </div>
-
         </div>
-
     </div>
+
 
 @endsection('content')

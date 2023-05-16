@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Cadastrar Item')
+@section('title', 'Reservar Item')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
@@ -92,7 +92,7 @@
                             Cadastrar item
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="patrimonios">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="bens">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -129,10 +129,9 @@
     <!--Conteúdo-->
     <div class="container-fluid">
         <div class="ms-5 text-start badge text-wrap sinalizador">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-folder-plus" viewBox="0 0 16 16">
-                <path d="m.5 3 .04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2Zm5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672Z"/>
-                <path d="M13.5 9a.5.5 0 0 1 .5.5V11h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V12h-1.5a.5.5 0 0 1 0-1H13V9.5a.5.5 0 0 1 .5-.5Z"/>
-            </svg> Cadastrar bem
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+            </svg> Reservar bem
         </div>
 
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
@@ -151,46 +150,30 @@
                                 <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15">
                             </div>
                             <div class="col m-4">
-                                <label for="inputDescricao" class="m-2 textoAzul3">Descrição:</label>
-                                <input type="text" class="w-auto form-control" id="inputDescricao" placeholder="60 x 60 x 56 cm, quatro pernas...">
+                                <label for="inputDataEmprestimo" class="m-2 textoAzul3">Data de empréstimo:</label>
+                                <input type="date" class="w-auto form-control" id="inputDataEmprestimo" placeholder="01/01/2023">
                             </div>
                             <div class="col m-4">
-                                <label for="inputValorUnitario" class="m-2 textoAzul3">Valor unitário:</label>
-                                <input type="text" class="w-auto form-control" id="inputValorUnitario" placeholder="300,00">
+                                <label for="inputDataDevolucao" class="m-2 textoAzul3">Data de devolução:</label>
+                                <input type="date" class="w-auto form-control" id="inputDataDevolucao" placeholder="01/01/2023">
                             </div>
                             <div class="col m-4">
-                                <label for="inputNumeroBem" class="m-2 textoAzul3">Número do bem:</label>
-                                <input type="number" class="w-auto form-control" id="inputNumeroBem" placeholder="1">
+                                <label for="inputHoraEmprestimo" class="m-2 textoAzul3">Horário de empréstimo:</label>
+                                <input type="date" class="w-auto form-control" id="inputHoraEmprestimo" placeholder="01/01/2023">
                             </div>
                             <div class="col m-4">
-                                <label for="inputNumeroNotaFiscal" class="m-2 textoAzul3">Número da nota fiscal:</label>
-                                <input type="number" class="w-auto form-control" id="inputNumeroNotaFiscal" placeholder="12">
+                                <label for="inputHoraDevolucao" class="m-2 textoAzul3">Horário de devolução:</label>
+                                <input type="date" class="w-auto form-control" id="inputHoraDevolucao" placeholder="01/01/2023">
                             </div>
                             <div class="col m-4">
-                                <label for="inputDataNotaFiscal" class="m-2 textoAzul3">Data da nota fiscal:</label>
-                                <input type="date" class="w-auto form-control" id="inputDataNotaFiscal" placeholder="01/01/2023">
-                            </div>
-                            <div class="col m-4">
-                                <label for="inputDataAquisicao" class="m-2 textoAzul3">Data de aquisição:</label>
-                                <input type="date" class="w-auto form-control" id="inputDataAquisicao" placeholder="01/01/2023">
-                            </div>
-                            <div class="col m-4">
-                                <label for="inputSetor" class="w-2 textoAzul3">Setor:</label>
-                                <input type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escolar">
-                            </div>
-                            <div class="col m-4">
-                                <label for="selectSituacao" class="w-2 textoAzul3">Situação:</label>
-                                <br><select name="selectSituacao" required="required" class="p-2 rounded form-control">
-                                    <option value="servivel">Servível</option>
-                                    <option value="inservivel">Inservível</option>
-                                    <option value="reservado">Reservado</option>
-                                </select>
+                                <label for="inputSetorSolicitante" class="w-2 textoAzul3">Setor solicitante:</label>
+                                <input type="text" class="w-auto form-control" id="inputSetorSolicitante" placeholder="Materia escolar">
                             </div>
                         </div>
 
                         <div class="col-lg-12" style="text-align:right">
-                            <a href="categorias">
-                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            <a href="reservar2">
+                                <button type="submit" class="btn btn-success">Reservar</button>
                             </a>
                         </div>
                     </form>

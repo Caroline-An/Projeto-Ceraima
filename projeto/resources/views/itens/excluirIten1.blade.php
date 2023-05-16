@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('title', 'Bens Cadastrados')
+@section('title', 'Excluir Item')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
@@ -93,7 +93,7 @@
                             Cadastrar item
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="patrimonios">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="bens">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -129,26 +129,22 @@
 
     <!--Conteúdo-->
     <div class="container-fluid">
-        <a href="categorias" id="categorias" class="ms-5 text-start badge text-wrap sinalizador">
+        <div class="ms-5 text-start badge text-wrap sinalizador">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-            </svg> Reservar Bem - Categorias
-        </a>
+            </svg> Categorias
+        </div>
         <div class="ms-1 text-start badge text-wrap sinalizador-selecionado">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
                 <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-            </svg> Reservar Bem - Categorias - Bens
+            </svg> Bens
         </div>
 
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
             <div class="row">
                 <div class="w-auto d-flex justify-content-center">
                     <!--CAMPO QUE DEVE SER MODIFICADO CONFORME INFORMAÇÕES DO BANCO-->
-                    <h1><?php
-                        $categoria = 'Uso em sala de aula';
-
-                        echo "$categoria"
-                    ?></h1>
+                    <h1>Uso em sala de aula</h1>
                 </div>
             </div>
             
@@ -180,8 +176,8 @@
 
                     <tbody class="conteudo-itens"> <!--class="row conteudo-itens w-auto h-auto p-2" id="conteudo-itens-lado-direito">-->
                         <tr>
-                            <td scope="col"><?php $item = "mesa"; echo "$item";?></td>
-                            <td scope="col"><?php $qnt = "12"; echo "$qnt";?></td>
+                            <td scope="col">mesa</td>
+                            <td scope="col">11</td>
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
@@ -189,29 +185,52 @@
                                     </div>
 
                                     <div class="col" id="meio">
-                                        <a href="alterarPatrimonio" type="button" class="botao-personalizado-itens" href="#">
+                                        <button type="button" class="botao-personalizado-itens" href="#">
                                             <svg style="color: rgb(251, 255, 0);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                                                 <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
                                             </svg>
                                             <br>Alterar
-                                        </a>
+                                        </button>
                                     </div>
 
                                     <div class="col">
-                                        <button type="button" id="botaoExcluir" class="botao-personalizado-itens" data-bs-toggle="modal" data-bs-target="#excluirModal">
+                                        <button type="button" id="botaoExcluir" class="botao-personalizado-itens">
                                             <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
                                                 <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
                                             </svg>
                                             <br>Excluir
                                         </button>
+
+                                        <!--NÃO ESTÁ FUNCIONANDO-->
+                                        <div class="modal fade" id="confirmarExcluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-edit text-center">
+                                                <div class="modal-content">
+                                                    <div class="modal-header"><!--Modal-header-->
+                                                        <h5 class="" id="exampleModalLabel">Excluir item</h5>
+                                                    </div>
+                                                    <div class="modal-body"><!--Modal-body-->
+                                                        Tem certeza que deseja excluir esse item?
+                                                    </div>
+                                                    <div class="modal-footer row "><!--Modal-footer-->
+                                                        <div class="col d-flex justify-content-around">
+                                                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
+                                                        </div>
+                                                        <div class="col d-flex justify-content-around">
+                                                            <button type="button" class="btn btn-danger">Excluir</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                        <td scope="col"><?php $item = "cadeiras"; echo "$item";?></td>
-                            <td scope="col"><?php $qnt = "12"; echo "$qnt";?></td>
+                            <td scope="col">aaaaaasssssssss</td>
+                            <td scope="col">11</td>
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
@@ -219,12 +238,12 @@
                                     </div>
 
                                     <div class="col" id="meio">
-                                        <a href="alterarPatrimonio" class="botao-personalizado-itens" href="#">
+                                        <button class="botao-personalizado-itens" href="#">
                                             <svg style="color: rgb(251, 255, 0);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
                                                 <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
                                             </svg>
                                             <br>Alterar
-                                        </a>
+                                        </button>
                                     </div>
 
                                     <div class="col">
@@ -250,28 +269,5 @@
         </div>
 
     </div>
-
-    <!-- Modal -->
-    <div class="modal fade modalExcluir" id="excluirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-            <div class="modal-content">
-                <div class="modal-header"><!--Modal-header-->
-                    <h5 class="modal-title" id="exampleModalLabel">Excluir item</h5>
-                </div>
-                <div class="modal-body"><!--Modal-body-->
-                    Tem certeza que deseja excluir esse bem?
-                </div>
-                <div class="modal-footer row"><!--Modal-footer-->
-                    <div class="col d-flex justify-content-around">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
-                    </div>
-                    <div class="col d-flex justify-content-around">
-                        <button type="button" class="btn btn-danger">Excluir</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 @endsection('content')
