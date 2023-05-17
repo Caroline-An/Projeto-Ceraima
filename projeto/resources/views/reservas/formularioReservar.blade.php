@@ -92,7 +92,7 @@
                             Cadastrar item
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="bens">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="bensCadastrados">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                             </svg>
@@ -159,15 +159,15 @@
                             </div>
                             <div class="col m-4">
                                 <label for="inputHoraEmprestimo" class="m-2 textoAzul3">Horário de empréstimo:</label>
-                                <input type="time" class="w-auto form-control" id="inputHoraEmprestimo" >
+                                <input type="time" class="w-auto form-control" id="inputHoraEmprestimo" min="08:00">
                             </div>
                             <div class="col m-4">
                                 <label for="inputHoraDevolucao" class="m-2 textoAzul3">Horário de devolução:</label>
-                                <input type="time" class="w-auto form-control" id="inputHoraDevolucao" placeholder="01/01/2023">
+                                <input type="time" class="w-auto form-control" id="inputHoraDevolucao" max="16:00" >
                             </div>
                             <div class="col m-4">
                                 <label for="inputSetorSolicitante" class="w-2 textoAzul3">Setor solicitante:</label>
-                                <input type="text" class="w-auto form-control" id="inputSetorSolicitante" placeholder="Materia escolar">
+                                <input type="text" class="w-auto form-control" id="inputSetorSolicitante" placeholder="Material escolar">
                             </div>
                         </div>
 

@@ -13,7 +13,7 @@
     <div class="row align-items-center">
         <div class="col-md-10 mx-auto col-lg-5">
 
-            <form class="p-4 p-md-5 cardLoginCadastro bg-light" action="" method="">
+            <form class="p-4 p-md-5 cardLoginCadastro bg-light" id="form-cadastro" action="" method="">
 
                 <div class="row">
                     <div class="d-flex justify-content-center">
@@ -29,7 +29,7 @@
                 <div class="row">
                     <label for="inputNome" class="m-2 textoAzul3">Nome</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="inputCPF" placeholder="Fulano de tal">
+                        <input type="text" class="form-control" id="inputCPF" placeholder="Fulano de tal" data-min-length="3">
                         
                     </div>
                 </div>
@@ -37,13 +37,19 @@
                 <div class="row">
                     <label for="inputCPF" class="m-2 textoAzul3">CPF</label>
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="inputCPF" placeholder="000.000.000-00">
+                        <input type="text" class="form-control" id="inputCPF" placeholder="000.000.000-00" >
                         
                     </div>
                 </div>
 
                 <div class="row">
                     <label for="inputSenha" class="m-2 textoAzul3">Senha</label>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="inputSenha" placeholder="******" >
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="inputSenhaConfirmacao" class="m-2 textoAzul3">Confirme a senha</label>
                     <div class="form-floating">
                         <input type="password" class="form-control" id="inputSenha" placeholder="******">
                     </div>
@@ -52,15 +58,19 @@
                 <div class="row">
 
                     <div class="d-flex justify-content-center m-3" style="text-align:right">
-                        <button class="btn btn-lg botoes">
-                            <a href="home" style="color: #fff; text-decoration: none;"> CADASTRAR</a>
-                        </button>
+                        <input type="button" id="botaoCadastrar" class="btn btn-lg botoes" value="CADASTRAR">
+                        <!--a href="home" style="color: #fff; text-decoration: none;">
+                        </a-->
                     </div>
 
                 </div>
 
             </form>
         </div>
+
+        <p class="error-validation template"></p>
+
+
     </div>
 </div>
 

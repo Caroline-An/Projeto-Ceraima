@@ -22,7 +22,7 @@
                     </div>
                     
                     <div class="d-flex justify-content-center">
-                        <p style="color: var(--texto-1);">Efetue login para entrar</p>
+                        <p style="color: var(--azul-cabecalho);">Efetue login para entrar</p>
                     </div>
 
                 </div>
