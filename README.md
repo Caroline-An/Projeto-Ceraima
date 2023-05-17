@@ -1,7 +1,7 @@
 # Para a Equipe
 - Instale o Láravel e php na sua máquina;
 - Entre no vs code;
-- Dê um "git clone https://github.com/Caroline-An/Sistema-de-Cadastro-de-Patrimonio.git" no terminal;
+- Dê um "git clone https://github.com/Caroline-An/Projeto-Ceraima.git no terminal;
 - Certifique-se SEMPRE de entrar na sua branch específica;
 - Comece a programar.
 - php artisan serve -> faz startar a aplicaç
