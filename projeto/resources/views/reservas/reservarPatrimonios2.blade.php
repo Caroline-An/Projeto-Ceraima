@@ -100,7 +100,7 @@
                             Ver itens cadastrados
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="reservar">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="reservarCateg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -129,7 +129,7 @@
 
     <!--Conteúdo-->
     <div class="container-fluid">
-        <a href="categorias" id="categorias" class="ms-5 text-start badge text-wrap sinalizador">
+        <a href="reservarCateg" id="categorias" class="ms-5 text-start badge text-wrap sinalizador">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
             </svg> Reservar Bem - Categorias
@@ -174,6 +174,7 @@
                         <tr>
                             <th scope="col">Nome:</th>
                             <th scope="col">Quantidade:</th>
+                            <th scope="col">Reservados</th>
                             <th scope="col">Ação</th>
                         </tr>
                     </thead>
@@ -182,10 +183,11 @@
                         <tr>
                             <td scope="col"><?php $item = "mesa"; echo "$item";?></td>
                             <td scope="col"><?php $qnt = "12"; echo "$qnt";?></td>
+                            <td scope="col"><?php $qntReservados = "4"; echo "$qntReservados"?></td>
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
-                                        <a class="btn btn-sucess" href="reservar3">Reservar</a>
+                                    <a class="btn btn-sucess" style="color: #fff;" href="formularioDeReserva">Reservar</a>
                                     </div>
                                 </div>
                             </td>
@@ -193,20 +195,17 @@
                         <tr>
                         <td scope="col"><?php $item = "cadeiras"; echo "$item";?></td>
                             <td scope="col"><?php $qnt = "12"; echo "$qnt";?></td>
+                            <td scope="col"><?php $qntReservados = "4"; echo "$qntReservados"?></td>
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
-                                        <a class="btn btn-sucess" href="reservar3">Reservar</a>
+                                        <a class="btn btn-sucess" style="color: #fff;" href="formularioDeReserva">Reservar</a>
                                     </div>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
-            <div  class="col-lg-12 me-3" style="text-align:right">
-                <a href="cadastroDeItens" class="btn btn-success">Nova</a>
             </div>
 
         </div>

@@ -189,7 +189,9 @@
                         </div>
 
                         <div class="col-lg-12" style="text-align:right">
-                            <input type="submit" class="btn btn-success" value="Cadastrar" href="#">
+                            <button class="btn btn-success">
+                                <a href="bensCadastrados" style="color: #fff; text-decoration: none;"> Cadastrar</a>
+                            </button>
                         </div>
                     </form>
 

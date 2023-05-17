@@ -49,8 +49,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="d-flex justify-content-center m-1">
-                        <a class=" btn btn-lg botoes" href="home">ENTRAR</a>
+                    <div class="d-flex justify-content-center m-1" style="text-align:right">
+                        <button class="btn btn-lg botoes">
+                            <a href="home" style="color: #fff; text-decoration: none;"> ENTRAR</a>
+                        </button>
                     </div>
                     
                     <p class="d-flex justify-content-center m-1 textoAzul3">ou</p>

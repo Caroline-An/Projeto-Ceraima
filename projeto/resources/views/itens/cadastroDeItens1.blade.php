@@ -189,9 +189,9 @@
                         </div>
 
                         <div class="col-lg-12" style="text-align:right">
-                            <a href="categorias">
-                                <button type="submit" class="btn btn-success">Cadastrar</button>
-                            </a>
+                            <button class="btn btn-success">
+                                <a href="bensCadastrados" style="color: #fff; text-decoration: none;"> Cadastrar</a>
+                            </button>
                         </div>
                     </form>
 
@@ -199,6 +199,5 @@
             </div>
         </div>
     </div>
-
 
 @endsection('content')
