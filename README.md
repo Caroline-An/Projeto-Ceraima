@@ -4,7 +4,7 @@
 - Dê um "git clone https://github.com/Caroline-An/Projeto-Ceraima.git no terminal;
 - Certifique-se SEMPRE de entrar na sua branch específica;
 - Comece a programar.
-- php artisan serve -> faz startar a aplicaç
+- php artisan serve -> faz startar a aplicação
 
 ---
 # Sistema-de-Cadastro-de-Patrimônio
