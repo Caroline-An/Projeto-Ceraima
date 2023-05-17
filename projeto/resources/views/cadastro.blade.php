@@ -51,8 +51,10 @@
 
                 <div class="row">
 
-                    <div class="d-flex justify-content-center m-3">
-                        <a class="btn btn-lg botoes" href="home">CADASTRAR</a>
+                    <div class="d-flex justify-content-center m-3" style="text-align:right">
+                        <button class="btn btn-lg botoes">
+                            <a href="home" style="color: #fff; text-decoration: none;"> CADASTRAR</a>
+                        </button>
                     </div>
 
                 </div>

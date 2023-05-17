@@ -99,7 +99,7 @@
                             Ver itens cadastrados
                         </a>
                     
-                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="reservar">
+                        <a class="nav-link align-itens-left text-left mt-4 mb-4 ms-2 me-2 p-2 itens-menu-lateral" href="reservarCateg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-journal-check" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M10.854 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                             <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -137,33 +137,33 @@
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
             <div class="row d-flex justify-content-around ">
                 <div class="w-auto d-flex justify-content-center">
-                
+
                     <form action="" method="" class="col-12 m-0 p-0 formulario">
+                        <!--ESTÁ ESTÁTICO PORQUE PRECISA DO BANCO PARA PUXAR OS DADOS MAS ELE AINDA NÃO FOI CRIADO-->
+                        <div class="row ms-4 me-4 mt-4 mb-0">
+                            <h1>Mesa</h1>
+                        </div>    
                         <div class="row m-2">
                             <div class="col m-4">
-                                <label for="inputNomeBem" class="m-2 textoAzul3">Nome:</label>
-                                <input type="text" class="w-auto form-control" id="inputNomeBem" placeholder="Mesa, cadeira, pincel, etc">
-
-                            </div>
-                            <div class="col m-4">
                                 <label for="inputQuantidade" class="m-2 textoAzul3">Quantidade:</label>
-                                <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15">
+                                <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15" min='0' >
                             </div>
                             <div class="col m-4">
                                 <label for="inputDataEmprestimo" class="m-2 textoAzul3">Data de empréstimo:</label>
-                                <input type="date" class="w-auto form-control" id="inputDataEmprestimo" placeholder="01/01/2023">
+                                <input type="date" class="w-auto form-control" id="inputDataEmprestimo" min="{{date('Y-m-d')}}">
+                                
                             </div>
                             <div class="col m-4">
                                 <label for="inputDataDevolucao" class="m-2 textoAzul3">Data de devolução:</label>
-                                <input type="date" class="w-auto form-control" id="inputDataDevolucao" placeholder="01/01/2023">
+                                <input type="date" class="w-auto form-control" id="inputDataDevolucao" >
                             </div>
                             <div class="col m-4">
                                 <label for="inputHoraEmprestimo" class="m-2 textoAzul3">Horário de empréstimo:</label>
-                                <input type="date" class="w-auto form-control" id="inputHoraEmprestimo" placeholder="01/01/2023">
+                                <input type="time" class="w-auto form-control" id="inputHoraEmprestimo" >
                             </div>
                             <div class="col m-4">
                                 <label for="inputHoraDevolucao" class="m-2 textoAzul3">Horário de devolução:</label>
-                                <input type="date" class="w-auto form-control" id="inputHoraDevolucao" placeholder="01/01/2023">
+                                <input type="time" class="w-auto form-control" id="inputHoraDevolucao" placeholder="01/01/2023">
                             </div>
                             <div class="col m-4">
                                 <label for="inputSetorSolicitante" class="w-2 textoAzul3">Setor solicitante:</label>
@@ -183,5 +183,25 @@
         </div>
     </div>
 
+    <!--Função para impedir que o usuário selecione uma data retroativa no calendário de empréstimo-->
+    <script>
+        $(function(){
+            var dtToday = new Date();
+        
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            
+            var maxDate = year + '-' + month + '-' + day;
+            alert(maxDate);
+            $('#inputDataEmprestimo').attr('min', maxDate);
+        });
+
+        
+</script>
 
 @endsection('content')

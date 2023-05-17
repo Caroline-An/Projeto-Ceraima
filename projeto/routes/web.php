@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Item\ItemController;
 use App\Http\Controllers\Sistema\SistemaController;
 use Illuminate\Support\Facades\Route;
 
