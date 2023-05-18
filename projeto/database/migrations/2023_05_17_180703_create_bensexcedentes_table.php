@@ -9,11 +9,16 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('bensexcedentes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('descricaodoexcedente',80);
+            $table->string('observacoes',80);
+            $table->integer('quantidadeexcedente');            
+            $table->unsignedBigInteger('usuario_id');
+            $table->foreign('usuario_id')->references('id')->on('usuarios');
         });
     }
 

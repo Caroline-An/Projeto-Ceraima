@@ -9,11 +9,16 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
-        Schema::create('devolucoes', function (Blueprint $table) {
+        Schema::create('devolucaos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('datadadevolucao');
+            $table->string('descricaodadevolucao',60);
+            $table->unsignedBigInteger('saida_id');
+            $table->foreign('saida_id')->references('id')->on('saidas');
+
         });
     }
 

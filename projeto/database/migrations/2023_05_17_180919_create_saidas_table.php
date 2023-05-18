@@ -9,11 +9,17 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('saidas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->date('datasaida');
+            $table->string('statussaida',60);
+            $table->integer('quantidadetotalsaida');
+            $table->unsignedBigInteger('usuario_id');
+            $table->foreign('usuario_id')->references('id')->on('usuarios');
+
         });
     }
 
