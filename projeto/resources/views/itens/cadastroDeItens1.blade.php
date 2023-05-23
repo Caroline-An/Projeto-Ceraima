@@ -136,75 +136,76 @@
             </svg> Cadastrar bem
         </div>
 
+
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
             <div class="row d-flex justify-content-around ">
-                <div class="w-auto d-flex justify-content-center">
+                <div class="w-auto d-flex justify-content-center m-5">
                 
                     <form action="{{ route('item.create')}}" method="POST" class="col-12 m-0 p-0 formulario">
                         <!-- <input type="hidden" value="{{ csrf_token()}}" name="_token"> -->
                         @csrf()
                         <div class="row m-2">
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputNomeBem" class="m-2 textoAzul3">Nome:</label>
-                                <input type="text" class="w-auto form-control" id="inputNomeBem" placeholder="Mesa, cadeira, pincel, etc" name="nomePatrimonio">
+                                <input type="text" id="inputNomeBem" class="w-auto form-control w-sm-auto" placeholder="Mesa, cadeira, pincel, etc" name="nomePatrimonio">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputQuantidade" class="m-2 textoAzul3">Quantidade:</label>
-                                <input type="number" class="w-auto form-control" id="inputQuantidade" placeholder="15" name="quantidade">
+                                <input type="number" id="inputQuantidade" class="w-auto form-control w-sm-auto" placeholder="15" name="quantidade">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputDescricao" class="m-2 textoAzul3">Descrição:</label>
-                                <textarea class="w-auto form-control" id="inputDescricao" placeholder="60 x 60 x 56 cm, quatro pernas..." name="descricao"></textarea>
+                                <textarea id="inputDescricao" class="w-auto form-control w-sm-auto" placeholder="60 x 60 x 56 cm, quatro pernas..." name="descricao"></textarea>
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputValorUnitario" class="m-2 textoAzul3">Valor unitário:</label>
-                                <input name="valorUnitario" type="text" class="w-auto form-control" id="inputValorUnitario" placeholder="300,00">
+                                <input name="valorUnitario" type="text" id="inputValorUnitario" class="w-auto form-control w-sm-auto" placeholder="300,00">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputValorTotal" class="m-2 textoAzul3">Valor total dos bens:</label>
-                                <input name="inputValorTotal" type="text" class="w-auto form-control" id="inputValorTotal" placeholder="300,00">
+                                <input name="inputValorTotal" type="text" id="inputValorTotal" class="w-auto form-control w-sm-auto" placeholder="300,00">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputNumeroBem" class="m-2 textoAzul3">Número do bem:</label>
-                                <input name="numeroPatrimonio" type="number" class="w-auto form-control" id="inputNumeroBem" placeholder="1">
+                                <input name="numeroPatrimonio" type="number" id="inputNumeroBem" class="w-auto form-control w-sm-auto" placeholder="1">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputNumeroNotaFiscal" class="m-2 textoAzul3">Número da nota fiscal:</label>
-                                <input name="numeroNotaFiscal" type="number" class="w-auto form-control" id="inputNumeroNotaFiscal" placeholder="12">
+                                <input name="numeroNotaFiscal" type="number" id="inputNumeroNotaFiscal" class="w-auto form-control w-sm-auto" placeholder="12">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputDataNotaFiscal" class="m-2 textoAzul3">Data da nota fiscal:</label>
-                                <input name="dataNotaFiscal" type="date" class="w-auto form-control" id="inputDataNotaFiscal" placeholder="01/01/2023">
+                                <input name="dataNotaFiscal" type="date" id="inputDataNotaFiscal" class="w-auto form-control w-sm-auto" placeholder="01/01/2023">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputDataAquisicao" class="m-2 textoAzul3">Data de aquisição:</label>
-                                <input name="data" type="date" class="w-auto form-control" id="inputDataAquisicao" placeholder="01/01/2023">
+                                <input name="data" type="date" id="inputDataAquisicao" class="w-auto form-control w-sm-auto" placeholder="01/01/2023">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputSetor" class="w-2 textoAzul3">Setor:</label>
-                                <input name="setor" type="text" class="w-auto form-control" id="inputSetor" placeholder="Materia escolar">
+                                <input name="setor" type="text" id="inputSetor" class="w-auto form-control w-sm-auto" placeholder="Materia escolar">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputOrgao" class="m-2 textoAzul3">Órgão:</label>
-                                <input type="text" class="w-auto form-control" id="inputOrgao" placeholder="Ministerio da educação, Ministério da saúde..." name="orgao">
+                                <input type="text" id="inputOrgao" class="w-auto form-control w-sm-auto" placeholder="Ministerio da educação, Ministério da saúde..." name="orgao">
                             </div> 
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputUnidadeOrcamentaria" class="m-2 textoAzul3">Unidade orçamentária:</label>
-                                <input type="text" class="w-auto form-control" id="inputUnidadeOrcamentaria" placeholder="Tesouraria, secretaria..." name="unidadeOrcamentaria">
+                                <input type="text" id="inputUnidadeOrcamentaria" class="w-auto form-control w-sm-auto" placeholder="Tesouraria, secretaria..." name="unidadeOrcamentaria">
                             </div>  
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputCentroDeCusto" class="m-2 textoAzul3">Centro de custo:</label>
-                                <input type="text" class="w-auto form-control" id="inputCentroDeCusto" placeholder="Tesouraria, secretaria..." name="centroDeCusto">
+                                <input type="text" id="inputCentroDeCusto" class="w-auto form-control w-sm-auto" placeholder="Tesouraria, secretaria..." name="centroDeCusto">
                             </div>  
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputCodigo" class="m-2 textoAzul3">Código:</label>
-                                <input type="number" class="w-auto form-control" id="inputCodigo" placeholder="09966869008" name="codigo">
+                                <input type="number" id="inputCodigo" class="w-auto form-control w-sm-auto" placeholder="09966869008" name="codigo">
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputHistorico" class="m-2 textoAzul3">Historico:</label>
-                                <textarea class="w-auto form-control" id="inputHistorico" placeholder="Escola x, sala y, evento z" name="historico"></textarea>
+                                <textarea id="inputHistorico" class="w-auto form-control w-sm-auto" placeholder="Escola x, sala y, evento z" name="historico"></textarea>
                             </div>
-                            <div class="col m-4">
+                            <div class="col col-lg-9 m-4">
                                 <label for="selectSituacao" class="w-2 textoAzul3">Situação:</label>
                                 <br><select name="selectSituacao" required="required" class="p-2 rounded form-control">
                                     <option value="servivel">Servível</option>
@@ -215,7 +216,7 @@
                         </div>
 
                         <div class="col-lg-12" style="text-align:right">
-                            <button class="btn btn-success" style="color: #fff;">
+                            <button class="btn btn-success me-5 mb-5" style="color: #fff;">
                                 Cadastrar
                             </button>
                         </div>
