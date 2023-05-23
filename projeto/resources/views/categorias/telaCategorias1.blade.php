@@ -170,7 +170,7 @@
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
-                                        <a href="" class="primary">Ver detalhes</a>
+                                        <a href="{{ route('item.detalhes')}}" class="primary">Ver detalhes</a>
                                     </div>
                                 </div>
                             </td>
@@ -181,7 +181,7 @@
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
-                                        <a href="#" class="primary">Ver detalhes</a>
+                                        <a href="{{ route('item.show')}}" class="primary">Ver detalhes</a>
                                     </div>
                                 </div>
                             </td>
