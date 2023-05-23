@@ -2,6 +2,7 @@
 - Instale o Láravel e php na sua máquina;
 - Entre no vs code;
 - Dê um "git clone https://github.com/Caroline-An/Projeto-Ceraima.git no terminal;
+- entre na pasta do projeto -> cd projeto;
 - Certifique-se SEMPRE de entrar na sua branch específica;
 - Comece a programar.
 - php artisan serve -> faz startar a aplicação
