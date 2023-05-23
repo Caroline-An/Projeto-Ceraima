@@ -16,6 +16,7 @@ class SistemaController{
         return view('/home');
     }
 
+
     public function cadastroDeItens(){
         return view('itens/cadastroDeItens1');
     }
@@ -31,6 +32,11 @@ class SistemaController{
     public function excluirBem(){
         return view('itens/exluirIten1');
     }
+
+    public function detalhesItens(){
+        return view('itens/detalhesPatrimonios');
+    }
+
 
 
     public function categorias()

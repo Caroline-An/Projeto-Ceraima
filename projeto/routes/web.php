@@ -52,15 +52,17 @@ Route::get('/cadastro', [SistemaController::class, 'cadastro']) -> name('user.ca
 
 Route::get('/home', [SistemaController::class, 'home']) -> name('sistema.home');
 
-Route::get('/cadastroDeItens', [ItemController::class, 'cadastroDeItens']) -> name('item.create');
+Route::get('/cadastroDeItens', [SistemaController::class, 'cadastroDeItens']) -> name('item.create');
 
-Route::get('/bensCadastrados', [ItemController::class, 'bensCadastrados']) -> name('item.show');
+Route::get('/bensCadastrados', [SistemaController::class, 'bensCadastrados']) -> name('item.show');
 
-Route::get('/alterarInfoBem', [ItemController::class, 'alterarInfoBem']) -> name('item.alter');
+Route::get('/alterarInfoBem', [SistemaController::class, 'alterarInfoBem']) -> name('item.alter');
 
-Route::get('/excluirBem', [ItemController::class, 'excluirBem']) -> name('item.delete');
+Route::get('/excluirBem', [SistemaController::class, 'excluirBem']) -> name('item.delete');
 
-Route::get('/categorias', [ItemController::class, 'categorias']) -> name('item.categ');
+Route::get('/categorias', [SistemaController::class, 'categorias']) -> name('item.categ');
+
+Route::get('/detalhes', [SistemaController::class, 'detalhesItens']) -> name('item.detalhes');
 
 
 Route::get('/reservarCateg', [SistemaController::class, 'reservarCateg']) -> name('reserva.categ');
@@ -72,4 +74,4 @@ Route::get('/formularioDeReserva', [SistemaController::class, 'formularioDeReser
 Route::get('/reservados', [SistemaController::class, 'reservados']) -> name('reserva.show');
 
 
-Route::get('/perfil', [SistemaController::class, 'perfil']);
+Route::get('/perfil', [SistemaController::class, 'perfil']) -> name('user.profile');

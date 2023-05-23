@@ -1,7 +1,7 @@
 
 @extends('layouts.main')
 
-@section('title', 'Bens Cadastrados')
+@section('title', 'Detalhes patrimonio')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
@@ -129,7 +129,7 @@
     </div>
 
     <!--Conteúdo-->
-    <div class="container-fluid">
+    <div class="container-fluid p-4">
         <a href="{{ route('item.categ') }}" id="categorias" class="ms-5 text-start badge text-wrap sinalizador">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
@@ -143,131 +143,104 @@
 
         <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
             <div class="row">
-                <div class="w-auto d-flex justify-content-center">
+                <div class="w-auto d-flex justify-content-center ms-5 me-5 mt-5">
                     <!--CAMPO QUE DEVE SER MODIFICADO CONFORME INFORMAÇÕES DO BANCO-->
-                    <h1>Uso em sala de aula</h1>
+                    <h1>Mesa</h1>
                 </div>
             </div>
             
             <div class="row">
-                <form action="" class="d-flex justify-content-around w-auto" method="post">
-                    
-                    <select name="selectCampoDeBusca" required="required" class="p-2 m-2 rounded form-control">
-                        <option value="nome">Busca por nome</option>
-                        <option value="categoria">Busca por categoria</option>
-                        <option value="quantidades">Busca por quantidade</option>
-                    </select>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <!--PHP INDICA ONDE VÃO ENTRAR OS DADOS DO BANCO-->
+                    <h4>Quantidade de patrimônios:</h4>
+                    <div class="p-3" id="detalhes">
+                        <?php $qnt =6; echo($qnt)?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Órgão:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $orgao = 9; echo($orgao);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Unidade orçamentária:</h4>
+                    <div class="p-3" id="detalhes">
+                        <?php $uniorcament = 19; echo($uniorcament);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Centro de Custo:</h4>
+                    <div class="p-3" id="detalhes">
+                        <?php $centrodecusto = 29; echo($centrodecusto);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Código do patrimônio:</h4>
+                    <div class="p-3" id="detalhes">
+                        <?php $codigo = 49; echo($codigo);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Descrição do patrimônio:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $descricao = 59; echo($descricao);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Número do patrimônio:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $numeropatrimonio = 69; echo($numeropatrimonio);?>
+                    </div>
+                </div>
+                <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Valor unitário do patrimônio:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $valor = 79; echo($valor);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Valor total dos patrimônios:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $valortotaldosbens = 89; echo($valortotaldosbens);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Data de aquisição do patrimônio:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $dataaquisicao = 9239; echo($dataaquisicao);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Data da nota fiscal:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $datanotafiscal = 99; echo($datanotafiscal);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Número da nota fiscal:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $numeronotafiscal = 109; echo($numeronotafiscal);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Histórico do patrimônio:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $historico = 119; echo($historico);?>
+                    </div>
+                </div>
+               <div class="col col-lg-5 col-md-3 ms-5 mb-4">
+                    <h4>Setor onde está alocado:</h4> 
+                    <div class="p-3" id="detalhes">
+                        <?php $setor = 123; echo($setor)?>
+                    </div>
 
-                    <input type="text" class="w-auto m-2 form-control" id="campoDeBusca" placeholder="Mesa, cadeira, pincel...">
-                    <input type="submit" class="btn btn-success m-2" value="Buscar">
-                </form>
-            </div>
+                </div>
 
-
-            <div class="row m-3">
-                
-                <table class="table cabecalho-itens text-center p-2" id="conteudo-itens-lado-direito">
-                    <thead >
-                        <tr>
-                            <th scope="col">Nome:</th>
-                            <th scope="col">Quantidade:</th>
-                            <th scope="col">Ação</th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="conteudo-itens"> <!--class="row conteudo-itens w-auto h-auto p-2" id="conteudo-itens-lado-direito">-->
-                        <tr>
-                            <td scope="col">mesa</td>
-                            <td scope="col">11</td>
-                            <td scope="col">
-                                <div class="row text-center">
-                                    <div class="col">
-                                        <a href="{{ route('item.detalhes')}}" class="primary">Ver detalhes</a>
-                                    </div>
-
-                                    <div class="col" id="meio">
-                                        <a href="alterarBens" type="button" class="botao-personalizado-itens" href="#">
-                                            <svg style="color: rgb(251, 255, 0);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                            </svg>
-                                            <br>Alterar
-                                        </a>
-                                    </div>
-
-                                    <div class="col">
-                                        <button type="button" id="botaoExcluir" class="botao-personalizado-itens" data-bs-toggle="modal" data-bs-target="#excluirModal">
-                                            <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                                            </svg>
-                                            <br>Excluir
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="col">aaaaaasssssssss</td>
-                            <td scope="col">11</td>
-                            <td scope="col">
-                                <div class="row text-center">
-                                    <div class="col">
-                                        <a href="" class="primary">Ver detalhes</a>
-                                    </div>
-
-                                    <div class="col" id="meio">
-                                        <a href="alterarBens" class="botao-personalizado-itens" href="#">
-                                            <svg style="color: rgb(251, 255, 0);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
-                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-                                            </svg>
-                                            <br>Alterar
-                                        </a>
-                                    </div>
-
-                                    <div class="col">
-                                        <button class="botao-personalizado-itens" href="#">
-                                            <svg style="color: red;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
-                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
-                                            </svg>
-                                            <br>Excluir
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div  class="col-lg-12 me-3" style="text-align:right">
-                <a href="cadastroDeItens" class="btn btn-success">Nova</a>
             </div>
 
         </div>
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade modalExcluir" id="excluirModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-            <div class="modal-content">
-                <div class="modal-header"><!--Modal-header-->
-                    <h5 class="modal-title" id="exampleModalLabel">Excluir item</h5>
-                </div>
-                <div class="modal-body"><!--Modal-body-->
-                    Tem certeza que deseja excluir esse bem?
-                </div>
-                <div class="modal-footer row"><!--Modal-footer-->
-                    <div class="col d-flex justify-content-around">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancelar</button>
-                    </div>
-                    <div class="col d-flex justify-content-around">
-                        <button type="button" class="btn btn-danger">Excluir</button>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 
