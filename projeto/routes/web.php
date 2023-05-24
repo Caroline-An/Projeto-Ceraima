@@ -42,9 +42,7 @@ use App\Http\Controllers\Sistema\SistemaController;
     vamos utilizar só para controle, a princípio os links para as demais páginas serão
     postos nelas p q a gente possa acessar com facilidade, no futuro vamos trocar para 
     que ela sempre leve diretamente à tela de login*/
-Route::get('/', function () { 
-    return view('welcome');
-});
+Route::get('/', [SistemaController::class, 'login']) -> name('user.login');
 
 Route::get('/login', [SistemaController::class, 'login']) -> name('user.login');
 

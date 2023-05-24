@@ -50,15 +50,15 @@
 
                 <div class="row">
                     <div class="d-flex justify-content-center m-1" style="text-align:right">
-                        <button class="btn btn-lg botoes">
-                            <a href="home" style="color: #fff; text-decoration: none;"> ENTRAR</a>
+                        <button class="btn btn-lg botoes" type="submit">
+                            <a href="{{ route('sistema.home')}}" style="color: #fff; text-decoration: none;"> ENTRAR</a>
                         </button>
                     </div>
                     
                     <p class="d-flex justify-content-center m-1 textoAzul3">ou</p>
                     
                     <div class="d-flex justify-content-center m-1">
-                        <a class="btn btn-lg botoes" href="cadastro">CADASTRAR</a>
+                        <a class="btn btn-lg botoes" href="{{ route('user.cadastro')}}">CADASTRAR</a>
                     </div>
                 </div>
 
