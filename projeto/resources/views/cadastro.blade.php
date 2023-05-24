@@ -58,9 +58,9 @@
                 <div class="row">
 
                     <div class="d-flex justify-content-center m-3" style="text-align:right">
-                        <input type="button" id="botaoCadastrar" class="btn btn-lg botoes" value="CADASTRAR">
-                        <!--a href="home" style="color: #fff; text-decoration: none;">
-                        </a-->
+                        <button type="submit" id="botaoCadastrar" class="btn btn-lg botoes">
+                            <a href="{{ route('sistema.home')}}" style="color: #fff; text-decoration: none;">CADASTRAR</a>
+                        </button>
                     </div>
 
                 </div>

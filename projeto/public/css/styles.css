@@ -163,6 +163,8 @@ html, body{
 }
 
 .formulario{
+    width: 100%;
+    padding: 0%;
     font-size: 20px;
 }
 
@@ -232,3 +234,5 @@ table{
     border-radius: 22px;
     border-width: 4px;
 }
+
+/*Reservas*/
