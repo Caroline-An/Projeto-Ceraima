@@ -212,7 +212,7 @@
                             <td scope="col">
                                 <div class="row text-center">
                                     <div class="col">
-                                        <a href="{{ route('item.detalhes'')}}" class="primary">Ver detalhes</a>
+                                        <a href="{{ route('item.detalhes')}}" class="primary">Ver detalhes</a>
                                     </div>
 
                                     <div class="col" id="meio">
