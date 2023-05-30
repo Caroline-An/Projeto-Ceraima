@@ -150,20 +150,12 @@
                                 <input type="text" id="inputNomeBem" class="w-auto form-control w-sm-auto" placeholder="Mesa, cadeira, pincel, etc" name="nomePatrimonio">
                             </div>
                             <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
-                                <label for="inputQuantidade" class="m-2 textoAzul3">Quantidade:</label>
-                                <input type="number" id="inputQuantidade" class="w-auto form-control w-sm-auto" placeholder="15" name="quantidade">
-                            </div>
-                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputDescricao" class="m-2 textoAzul3">Descrição:</label>
                                 <textarea id="inputDescricao" class="w-auto form-control w-sm-auto" placeholder="60 x 60 x 56 cm, quatro pernas..." name="descricao"></textarea>
                             </div>
                             <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputValorUnitario" class="m-2 textoAzul3">Valor unitário:</label>
                                 <input name="valorUnitario" type="text" id="inputValorUnitario" class="w-auto form-control w-sm-auto" placeholder="300,00">
-                            </div>
-                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
-                                <label for="inputValorTotal" class="m-2 textoAzul3">Valor total dos bens:</label>
-                                <input name="inputValorTotal" type="text" id="inputValorTotal" class="w-auto form-control w-sm-auto" placeholder="300,00">
                             </div>
                             <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
                                 <label for="inputNumeroBem" class="m-2 textoAzul3">Número do bem:</label>
