@@ -188,10 +188,6 @@
                     </tbody>
                 </table>
 
-                <div  class=" me-3" style="text-align:right">
-                    <a href="{{ route('reserva.create')}}" class="btn btn-success">Nova</a>
-                </div>
-
             </div>
 
         </div>
