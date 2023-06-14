@@ -203,6 +203,8 @@
                                     <option value="servivel">Servível</option>
                                     <option value="inservivel">Inservível</option>
                                     <option value="reservado">Reservado</option>
+                                    <option value="excedente">Excedente</option>
+                                    <option value="desaparecido">Desaparecido</option>
                                 </select>
                             </div>
                         </div>
