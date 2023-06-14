@@ -7,14 +7,28 @@ use Illuminate\Http\Request;
 
 class PatrimonioController extends Controller
 {
+    public function create(){
+        return view('patrimonios.create');
+    }
+    
+    public function cadastrar(Request $request, Patrimonio $patrimonios){
+        $data = $request->all();
+        $data['nomePatrimonio'] = 'a';
+
+        $patrimonios = $patrimonios->create($data);
+        dd($patrimonios);
+
+        return redirect()->route(('item.show'));
+    }
+
+
+
+
+
     public function index(){
         $patrimonios = Patrimonio::all();
         //return view('patrimonios.index',compact('Patrimonio'));
         return view('patrimonios.index', ['patrimonios'=>$patrimonios]); //passa objeto
-    }    
-
-    public function create(){
-        return view('patrimonios.create');
     }
 
     public function edit($id){
@@ -27,4 +41,6 @@ class PatrimonioController extends Controller
         $patrimonios = Patrimonio::all();
         echo $patrimonios;
     }
+
+    
 }

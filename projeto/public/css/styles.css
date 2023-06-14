@@ -163,6 +163,8 @@ html, body{
 }
 
 .formulario{
+    width: 100%;
+    padding: 0%;
     font-size: 20px;
 }
 
@@ -222,3 +224,15 @@ table{
 #categorias{
     text-decoration: none;
 }
+
+
+/*ID*/
+/*Detalhes dos itens*/
+#detalhes{
+    border-style: solid;
+    border-color: var(--texto-2);
+    border-radius: 22px;
+    border-width: 4px;
+}
+
+/*Reservas*/

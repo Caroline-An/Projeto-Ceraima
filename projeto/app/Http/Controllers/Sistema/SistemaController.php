@@ -4,17 +4,12 @@ namespace App\Http\Controllers\Sistema;
 
 class SistemaController{
 
-    public function login(){
-        return view('/login');
-    }
+    public function login(){ return view('/login');}
 
-    public function cadastro(){
-        return view('/cadastro');
-    }
+    public function cadastro(){ return view('/cadastro');}
 
-    public function home(){
-        return view('/home');
-    }
+    public function home(){ return view('/home');}
+
 
     public function cadastroDeItens(){
         return view('itens/cadastroDeItens1');
@@ -31,6 +26,11 @@ class SistemaController{
     public function excluirBem(){
         return view('itens/exluirIten1');
     }
+
+    public function detalhesItens(){
+        return view('itens/detalhesPatrimonios');
+    }
+
 
 
     public function categorias()
