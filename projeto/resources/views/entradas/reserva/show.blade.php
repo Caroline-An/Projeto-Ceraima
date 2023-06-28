@@ -14,7 +14,24 @@
 		</tr>
 		@endforeach
 
-	</table>
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @endsection('conteudo')

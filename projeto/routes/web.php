@@ -72,4 +72,7 @@ Route::get('/formularioDeReserva', [SistemaController::class, 'formularioDeReser
 Route::get('/reservados', [SistemaController::class, 'reservados']) -> name('reserva.show');
 
 
+Route::get('/edit', [SistemaController::class, 'edit']) -> name('saidas.edit');
+
+
 Route::get('/perfil', [SistemaController::class, 'perfil']) -> name('user.profile');
