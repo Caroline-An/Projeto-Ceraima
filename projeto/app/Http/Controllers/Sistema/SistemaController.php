@@ -63,5 +63,13 @@ class SistemaController{
     {
         return view('perfil');
     }
+
+    public function mudar()
+    {
+        return view('reservas/mudar');
+    }
+
+  
+
 }
 ?>

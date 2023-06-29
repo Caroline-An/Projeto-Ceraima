@@ -71,6 +71,7 @@ Route::get('/formularioDeReserva', [SistemaController::class, 'formularioDeReser
 
 Route::get('/reservados', [SistemaController::class, 'reservados']) -> name('reserva.show');
 
+Route::get('/mudar', [SistemaController::class, 'mudar']) -> name('reservas.mudar');
 
 
 
