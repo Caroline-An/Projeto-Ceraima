@@ -130,6 +130,103 @@
 
     <!--Conteúdo-->
     <div class="container-fluid">
+        
+        <!--<h1>Perfil</h1>
+        
+        <h2>Informações pessoais</h2>
+        <p>Nome: <span id="nome">John Doe</span></p>
+        <p>Email: <span id="email">johndoe@example.com</span></p>
+        
+        <h2>Editar informações</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
+            
+            <label for="foto">Foto de Perfil:</label>
+            <input type="file" id="foto" name="foto"><br><br>
+            
+            <input type="submit" valor="Salvar">
+        </form>-->
+        <div class="container-fluid">
+            <div class="ms-5 text-start badge text-wrap sinalizador-selecionado">
+                <svg class="bi bi-person-circle m-0" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg> Perfil
+            </div>
+
+            <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
+
+                <div class="row ps-5 pe-5">
+                    <div class="m-5">
+                        
+
+                        <div class="row mt-3">
+                            <div class="row w-100 border-bottom border-5 me-5 mb-5 borda">
+                                Dados do usuário
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-3 me-5 d-flex h-auto justify-content-end">
+                                    <div>
+                                        <img class="border rounded-circle" src="caminho_da_imagem.jpg" alt="Foto do Usuário" width="250" onerror="this.src='https://via.placeholder.com/150'; this.alt='Foto do Perfil'">
+                                        <span class="d-flex align-itens-end justify-content-center edit-icon mt-3" onclick="editaCampo('foto')"><button>Editar foto &#9998</button></span><br><br>
+                                    </div>
+                                </div>
+
+                                <div class="col-5 p-3 border border-black rounded ">
+                                    <div class="border-bottom border-black mt-3 align-item-center">
+                                        <span id="nome" onclick="editaCampo('nome')">Fulano de Tal</span>
+                                        <span class="edit-icon" onclick="editaCampo('nome')">&#9998;</span><br><br>
+                                    </div>
+                                    
+                                    <div class="border-bottom border-black mt-3 align-item-center">
+                                        <p>Contato:</p>
+                                        <span id="contato" onclick="editaCampo('contato')">(**) **** - ****</span>
+                                        <span class="edit-icon" onclick="editaCampo('contato')">&#9998;</span><br><br>
+                                    </div>
+                                    
+                                    <div class="border-bottom border-black mt-3 align-item-center">
+                                        <p>Setor:</p>
+                                        <span id="setor" onclick="editaCampo('setor')">Setor X</span>
+                                        <span class="edit-icon" onclick="editaCampo('setor')">&#9998;</span><br><br>
+                                    </div>
+                                    
+                                    <div class="border-bottom border-black mt-3 align-item-center">
+                                        <p>Cargo:</p>
+                                        <span id="cargo" onclick="editaCampo('cargo')">XXXXX</span>
+                                        <span class="edit-icon" onclick="editaCampo('cargo')">&#9998;</span><br><br>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
+
+    <script>
+        function editaCampo(campoID) {
+            var campo = document.getElementById(campoID);
+            var valor = campo.innerText;
+            var input = document.createElement("input");
+            input.type = "text";
+            input.valor = valor;
+            campo.innerText = "";
+            campo.appendChild(input);
+            input.focus();
+            input.addEventListener("blur", function() {
+                campo.innerText = input.valor;
+            });
+        }
+  </script>
 
 @endsection('content')

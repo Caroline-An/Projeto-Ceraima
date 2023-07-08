@@ -117,7 +117,7 @@ html, body{
 }
 
 
-/*Home page - conteúdo*/
+    /*Home page - conteúdo*/
 
 .container-conteudo{
     border-top-color: var(--texto-2);
@@ -149,7 +149,7 @@ html, body{
 }
 
 
-/*Cadastrar bens*/
+    /*Cadastrar bens*/
 .sinalizador{
     background-color: var(--azul-cabecalho);
     color: #fff;
@@ -180,7 +180,7 @@ select{
     color: var(--texto-2);
 }
 
-/*Exclusão de patrimônio*/
+    /*Exclusão de patrimônio*/
 
 table{
     border-radius: 22px;
@@ -203,7 +203,7 @@ table{
     color: #fff;
 }
 
-/*Exclusão de patrimônio - modal*/
+    /*Exclusão de patrimônio - modal*/
 
 .modalExcluir{
     margin-left: 40%;
@@ -218,16 +218,20 @@ table{
     border-color: #fff;
 }
 
+    /*Tela - Perfil*/
+.borda{
+    border-color: var(--azul-botoes);
+}
+
 
 /*IDs*/
-/*Tela - Categorias*/
+    /*Tela - Categorias*/
 #categorias{
     text-decoration: none;
 }
 
 
-/*ID*/
-/*Detalhes dos itens*/
+    /*Detalhes dos itens*/
 #detalhes{
     border-style: solid;
     border-color: var(--texto-2);
@@ -235,4 +239,4 @@ table{
     border-width: 4px;
 }
 
-/*Reservas*/
+
