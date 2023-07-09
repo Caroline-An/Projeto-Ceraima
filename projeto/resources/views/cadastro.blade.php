@@ -41,6 +41,14 @@
                         
                     </div>
                 </div>
+                
+                <div class="row">
+                    <label for="inputEmail" class="m-2 textoAzul3">E-mail</label>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="xxxxxx@xxx.com" >
+                        
+                    </div>
+                </div>
 
                 <div class="row">
                     <label for="inputSenha" class="m-2 textoAzul3">Senha</label>

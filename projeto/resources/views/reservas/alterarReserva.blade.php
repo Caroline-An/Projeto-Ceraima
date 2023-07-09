@@ -1,7 +1,6 @@
-
 @extends('layouts.main')
 
-@section('title', 'Perfil')
+@section('title', 'Alterar Reserva')
 
 @section('cabecalho')
 <!--Cabecalho das telas (fora login e cadastro)-->
@@ -125,157 +124,71 @@
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>     
     </div>
 
     <!--Conteúdo-->
     <div class="container-fluid">
-        
-        <!--<h1>Perfil</h1>
-        
-        <h2>Informações pessoais</h2>
-        <p>Nome: <span id="nome">John Doe</span></p>
-        <p>Email: <span id="email">johndoe@example.com</span></p>
-        
-        <h2>Editar informações</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu email" required><br><br>
-            
-            <label for="foto">Foto de Perfil:</label>
-            <input type="file" id="foto" name="foto"><br><br>
-            
-            <input type="submit" valor="Salvar">
-        </form>-->
-        <div class="container-fluid">
-            <div class="ms-5 text-start badge text-wrap sinalizador-selecionado">
-                <svg class="bi bi-person-circle m-0" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg> Perfil
-            </div>
+        <div class="ms-5 text-start badge text-wrap sinalizador">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+            </svg> Alterar Reserva
+        </div>
 
-            <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
-
-                <div class="row ps-5 pe-5">
-                    <div class="m-5">
-                        
-
-                        <div class="row mt-3">
-                            <div class="row w-100 border-bottom border-5 me-5 mb-5 borda">
-                                Dados do usuário
+        <div class="ms-5 me-5 mt-1 mb-1 container-conteudo bg-light p-4">
+            <div class="row d-flex justify-content-around ">
+                <div class="w-auto d-flex justify-content-center m-5">
+                
+                    <form action="{{ route('item.create')}}" method="POST" class="col-12 m-0 p-0 formulario">
+                        <!-- <input type="hidden" value="{{ csrf_token()}}" name="_token"> -->
+                        @csrf()
+                        <div class="row m-2">
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="qntdReserva" class="m-2 textoAzul3">Quantidade:</label>
+                                <input type="number" id="qntdReserva" class="w-auto form-control w-sm-auto" name="qntdReserva">
                             </div>
-                            
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-12 me-5 mb-5 d-flex h-auto justify-content-center">
-                                    <div>
-                                        <label class="border rounded-circle imagem" tabindex="0">
-                                            <input type="file" accept="image/*" class="inputImagem" id="picture_input" name="picture_input">
-                                            <span class="picture_image d-flex align-items-center justify-content-center"></span>
-                                        </label>
-
-                                        <!--<input type="file" id="fileInput" accept="image/png">
-                                        <button onclick="uploadFile()">Upload</button>
-
-                                        <img class="border rounded-circle" src="caminho_da_imagem.jpg" alt="Foto do Usuário" width="250" onerror="this.src='https://via.placeholder.com/150'; this.alt='Foto do Perfil'">
-                                        <span class="d-flex align-itens-end justify-content-center edit-icon mt-3" onclick="editaCampo('foto')"><button>Editar foto &#9998</button></span><br><br>
-                                        -->
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-9 col-sm-12 p-3 border border-black rounded ">
-                                    <div class="border-bottom border-black mt-3 align-item-center">
-                                        <span id="nome" onclick="editaCampo('nome')">Fulano de Tal</span>
-                                        <span class="edit-icon" onclick="editaCampo('nome')">&#9998;</span><br><br>
-                                    </div>
-                                    
-                                    <div class="border-bottom border-black mt-3 align-item-center">
-                                        <p>Contato:</p>
-                                        <span id="contato" onclick="editaCampo('contato')">(**) **** - ****</span>
-                                        <span class="edit-icon" onclick="editaCampo('contato')">&#9998;</span><br><br>
-                                    </div>
-                                    
-                                    <div class="border-bottom border-black mt-3 align-item-center">
-                                        <p>E-mail:</p>
-                                        <span id="email" onclick="editaCampo('email')">xxxxx@xxxx.com</span>
-                                        <span class="edit-icon" onclick="editaCampo('email')">&#9998;</span><br><br>
-                                    </div>
-                                    
-                                    <div class="border-bottom border-black mt-3 align-item-center">
-                                        <p>Setor:</p>
-                                        <span id="setor" onclick="editaCampo('setor')">Setor X</span>
-                                        <span class="edit-icon" onclick="editaCampo('setor')">&#9998;</span><br><br>
-                                    </div>
-                                    
-                                    <div class="border-bottom border-black mt-3 align-item-center">
-                                        <p>Cargo:</p>
-                                        <span id="cargo" onclick="editaCampo('cargo')">XXXXX</span>
-                                        <span class="edit-icon" onclick="editaCampo('cargo')">&#9998;</span><br><br>
-                                    </div>
-                                </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="setorpReserva" class="m-2 textoAzul3">Setor Solicitante:</label>
+                                <input type="text" id="setorpReserva" class="w-auto form-control w-sm-auto" name="setorpReserva">
                             </div>
-                            
-                            
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="objtReserva" class="m-2 textoAzul3">Objetivo do empréstimo:</label>
+                                <textarea id="objtReserva" class="w-auto form-control w-sm-auto" name="objtReserva"></textarea>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="respReserva" class="m-2 textoAzul3">Responsável:</label>
+                                <textarea id="respReserva" class="w-auto form-control w-sm-auto" name="respReserva"></textarea>
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="inputDataEmpr" class="m-2 textoAzul3">Data do empréstimo:</label>
+                                <input name="inputDataEmpr" type="date" id="inputDataEmpr" class="w-auto form-control w-sm-auto" >
+                            </div>
+                            <div class="col col-lg-3 col-md-4 col-sm-auto m-lg-4 m-md-4 m-sm-0">
+                                <label for="inputDataDev" class="m-2 textoAzul3">Data de devolução:</label>
+                                <input name="inputDataDev" type="date" id="inputDataDev" class="w-auto form-control w-sm-auto">
+                            </div>
+                        <div class="col m-5">
+                            <label for="inputHoraEmprestimo" class="w-2 textoAzul3">Horário de empréstimo:</label>
+                            <input type="time" class="w-auto form-control" id="inputHoraEmprestimo" min="08:00">
+                        </div>
+                        <div class="col m-5">
+                            <label for="inputHoraDevolucao" class="w-2 textoAzul3">Horário de devolução:</label>
+                            <input type="time" class="w-auto form-control" id="inputHoraDevolucao" max="16:00" >
+                        </div>
                         </div>
 
-                    </div>
+                        <div class="col-lg-12" style="text-align:right">
+                            <button class="btn btn-success me-5 mb-5" style="color: #fff;">
+                                Alterar
+                            </button>
+                        </div>
+                    </form>
+
                 </div>
             </div>
         </div>
-        
     </div>
 
-    <script>
-
-        const inputFIle = document.querySelector('#picture_input');
-        const pictureImage = document.querySelector('.picture_image');
-        const pictureImageTxt = 'Selecione uma imagem';
-
-        pictureImage.innerHTML = pictureImageTxt;
-
-        inputFIle.addEventListener("change", function(e) {
-            const inputTarget = e.target;
-            const file = inputTarget.files[0];
-
-            if(file){
-                const reader = new FileReader();
-
-                reader.addEventListener("load", function(e){
-                    const readerTarget = e.target;
-
-                    const img = document.createElement("img");
-                    img.src = readerTarget.result;
-                    img.classList.add("picture_image");
-
-                    pictureImage.innerHTML = "";
-
-                    pictureImage.appendChild(img);
-                });
-
-                reader.readAsDataURL(file);
-            }
-            else{
-                pictureImage.innerHTML = pictureImageTxt;
-            }
-        });
-
-        
-        function editaCampo(campoID) {
-            var campo = document.getElementById(campoID);
-            var valor = campo.innerText;
-            var input = document.createElement("input");
-            input.type = "text";
-            input.valor = valor;
-            campo.innerText = "";
-            campo.appendChild(input);
-            input.focus();
-            input.addEventListener("blur", function() {
-                campo.innerText = input.valor;
-            });
-        }
-  </script>
 
 @endsection('content')

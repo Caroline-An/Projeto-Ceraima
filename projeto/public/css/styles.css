@@ -223,6 +223,33 @@ table{
     border-color: var(--azul-botoes);
 }
 
+.inputImagem{
+    display: none;
+}
+
+.imagem{
+    background-color: var(--azul-cabecalho);
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.fotoImg{
+    max-width: 100%;
+}
+
+.imagem:hover{
+    color: #fff;
+    background-color: var(--azul-botoes-2);
+}
+
+.picture_image{
+    width: 300px;
+    height: 300px;
+}
+
 
 /*IDs*/
     /*Tela - Categorias*/

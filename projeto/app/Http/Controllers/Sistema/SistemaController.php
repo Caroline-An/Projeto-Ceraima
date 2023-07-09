@@ -58,6 +58,11 @@ class SistemaController{
         return view('reservas/reservas1');
     }
 
+    public function alterarReserva()
+    {
+        return view('reservas/alterarReserva');
+    }
+
 
     public function perfil()
     {
