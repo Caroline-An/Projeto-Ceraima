@@ -53,6 +53,7 @@
                 <div class="row">
                     <label for="inputSenha" class="m-2 textoAzul3">Senha</label>
                     <div class="form-floating">
+                        <i class="fa-solid fa-eye"></i>
                         <input type="password" class="form-control" id="inputSenha" placeholder="******" >
                     </div>
                 </div>
@@ -81,5 +82,9 @@
 
     </div>
 </div>
+
+<script>
+    let btn = document.querySelector("");
+</script>
 
 @endsection('content')
